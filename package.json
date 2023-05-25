@@ -7,6 +7,7 @@
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "del": "^6.1.1",
+    "gh-pages": "^5.0.0",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
@@ -30,6 +31,7 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp",
+    "deploy": "npm run build && gh-pages -d build",
     "test": "npm run editorconfig && npm run stylelint"
   },
   "browserslist": [
